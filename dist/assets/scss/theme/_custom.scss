@@ -1,0 +1,300 @@
+.modal-backdrop.show {
+  opacity: 0.8 !important;
+}
+
+.modal {
+  top: 10%;
+}
+
+.router-link-active {
+  color: #f8b631 !important;
+}
+
+.display-inline {
+  display: inline !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-weight-300 {
+  font-weight: 300 !important;
+}
+
+$sizes: (0, 5, 10, 12, 14, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 70, 75, 80, 85, 90, 95, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $sizes {
+  .width-#{$space}0 {
+    width: #{$space}0% !important;
+  }
+  .height-#{$space}0 {
+    height: #{$space}0% !important;
+  }
+  .width-#{$space}0p {
+    width: #{$space}0px !important;
+  }
+  .height-#{$space}0p {
+    height: #{$space}0px !important;
+  }
+  .font-size-#{$space} {
+    font-size: #{$space}px !important;
+  }
+  .margin-#{$space} {
+    margin: #{$space}px;
+  }
+
+  .padding-#{$space} {
+    padding: #{$space}px;
+  }
+  @each $side in $sides {
+    .margin-#{$side}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .padding-#{$side}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+
+//.btn-sm {
+//  padding: 6px 20px !important;
+//  font-size: 14px !important;
+//}
+.btn-sm {
+  padding: 2px 10px !important;
+  font-size: 12px !important;
+}
+
+
+.custom-primary-button {
+  background-color: #fff;
+  color: $theme-deafult;
+  font-size: 0.875rem;
+  padding: 0.45rem 1.25rem;
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid $theme-deafult;
+}
+
+
+.custom-secondary-button {
+  background-color: #fff;
+  color: #773C80;
+  font-size: 0.875rem;
+  padding: 0.25rem 1.25rem;
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #773C80;
+}
+
+
+.button-premium.btn {
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+
+  &:hover {
+    border: 1px solid $theme-deafult;
+    color: white;
+    background-color: $theme-deafult;
+  }
+}
+
+.button-premium.btn-primary {
+  padding: 12px 40px;
+  background-color: $theme-deafult;
+  font-size: 16px;
+  border: 1px solid $theme-deafult;
+  color: white;
+
+  &:active {
+    background-color: transparent !important;
+    border: 1px solid $theme-deafult !important;
+    color: $theme-deafult !important;
+    box-shadow: none !important;
+  }
+
+  &:focus {
+    background-color: transparent !important;
+    border: 1px solid $theme-deafult !important;
+    color: $theme-deafult !important;
+    box-shadow: none !important;
+  }
+}
+
+
+.vertical-align-center {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+
+.menu-item-add-cart {
+
+  //addmenuincrementdecrementcounters start
+
+  .item-counter {
+    .right {
+      float: right;
+    }
+
+    .super_number.menu .ui.attached.button.dec {
+      padding-top: 8px !important;
+    }
+
+    .super_number.menu .ui.attached.button {
+      padding-right: 7px !important;
+      padding-left: 7px !important;
+      background: #fff !important;
+      color: $treademal-secondary !important;
+      box-shadow: 0 0 0 1px $treademal-secondary !important;
+      float: left;
+      cursor: pointer;
+      line-height: 14px;
+      height: 28px;
+      font-size: 22px;
+    }
+
+    .ui.left.attached.button {
+      display: inline-block;
+      border-left: none;
+      text-align: right;
+      padding-right: .75em;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .ui.attached.button {
+      position: relative;
+      display: block;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: 0 0 0 1px #e7e7e7 !important;
+    }
+
+    .ui.button {
+      cursor: pointer;
+      display: inline-block;
+      min-height: 1em;
+      outline: 0;
+      border: none;
+      vertical-align: baseline;
+      background: #E0E1E2;
+      color: rgba(0, 0, 0, .6);
+      margin: 0 .25em 0 0;
+      padding: .78571429em 1.5em;
+      text-transform: none;
+      text-shadow: none;
+      line-height: 1em;
+      font-style: normal;
+      text-align: center;
+      text-decoration: none;
+      border-radius: .28571429rem;
+      box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 #e7e7e7 inset;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent;
+      -webkit-transition: background .1s ease 0s;
+      transition: background .1s ease 0s;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .super_number.menu input {
+      position: relative;
+      width: 30px;
+      margin: 0;
+      background: $treademal-secondary;
+      color: #fff;
+      font-size: 14px;
+      height: 30px;
+      border: 1px solid $treademal-secondary;
+      float: left;
+      top: -1px;
+      padding: 0;
+      text-align: center;
+      border-radius: 0;
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    .super_number.menu .ui.attached.button.inc {
+      padding-top: 8px !important;
+      padding-left: 7px !important;
+    }
+
+    .ui.right.attached.button {
+      display: inline-block;
+      text-align: left;
+      padding-left: .75em;
+      border-radius: 0 .28571429rem .28571429rem 0;
+    }
+
+    .ui.button, .ui.buttons .button, .ui.buttons .or {
+      font-size: 1rem;
+    }
+  }
+
+  //addmenuincrementdecrementcounters end
+}
+
+
+.fc-event {
+  background-color: $theme-deafult !important;
+  border-color: $theme-deafult !important;
+}
+
+
+button[disabled] {
+  cursor: not-allowed;
+}
+
+
+.btn-primary {
+  color: $white;
+  background-color: $treademal-primary;
+  border-color: $treademal-primary;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: $treademal-primary;
+  border-color: $treademal-primary;
+}
+
+.pace {
+  display: none;
+}

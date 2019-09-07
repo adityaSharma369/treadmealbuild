@@ -1,0 +1,163 @@
+// // Animation css
+@import '~animate.css/animate.min.css';
+// Bootstrap Layout scss
+@import '~bootstrap/scss/bootstrap';
+// Themify icon scss
+@import "css/themify-icons.css";
+// Magnific Popup css
+@import '~magnific-popup/dist/magnific-popup.css';
+// Color 1 scss
+@import 'scss/color1';
+// Page loader Topbar
+@import '../vendor/pace/pace-orange-min.css';
+// Toastr Css
+@import '~ngx-toastr/toastr.css';
+// Rating Scss
+//@import '~ngx-bar-rating/themes/br-default-theme.css';
+@import '~ngx-bar-rating/themes/br-horizontal-theme';
+//Full calendar
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import "~ngx-bootstrap/datepicker/bs-datepicker.css";
+
+
+.suggestions-container .item {
+  width: 100%;
+}
+
+.btn-light {
+  color: #2d2d2d !important;
+}
+
+.locatemeBtn {
+  position: relative;
+
+  .inner_locateme {
+    padding: 4px 10px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+    right: 0px;
+    cursor: pointer;
+  }
+}
+
+.color-blue {
+  color: #485ff2 !important;
+}
+
+.color-red {
+  color: #ef3635 !important;
+}
+
+.address-card-options i {
+  color: #BBB;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+
+app-frequently-asked-questions {
+  .frequently-asked-questions-wrapper {
+
+    .panel-open {
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      font-weight: 500 !important;
+      text-transform: inherit !important;
+    }
+
+
+    .panel-heading:hover {
+      .btn-link {
+        color: $treademal-primary !important;
+      }
+    }
+
+
+    .btn-link {
+      color: #000 !important;
+    }
+
+    .card-header {
+      background-color: inherit !important;
+    }
+
+    .card-body {
+      padding: 2rem !important;
+
+      p {
+        line-height: 1.5rem !important;
+      }
+    }
+
+    .panel-open {
+      .btn-link {
+        color: $treademal-primary !important;
+      }
+    }
+  }
+}
+
+.non-repeated-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  background-color: #dddddd;
+}
+
+.user-profile-pic {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.onhover-dropdown:before {
+  right: 0px !important;
+}
+
+.logged-in-user-details {
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.component-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-group {
+  label {
+    font-size: 13px !important;
+  }
+
+  .form-control {
+    border-radius: 4px !important;
+  }
+}
+
+app-three-days-meal-plan {
+  .step-item {
+    background-color: #fdfdfd;
+    min-height: 300px !important;
+    height: calc(100vh - 300px) !important;
+    padding: 15px 20px;
+    overflow: auto;
+  }
+}
+
+.dull-50 {
+  opacity: 0.5;
+}
+
+.btn-purple {
+  color: #ffffff !important;
+  background-color: #773C80;
+  border-color: #783480;
+}
